@@ -4,6 +4,7 @@ metadata:
   name: python-app
 spec:
   rules:
+  - host: "python-app.test.com"
   - http:
       paths:
       - path: /
@@ -12,5 +13,5 @@ spec:
           service:
             name: python-app
             port:
-              number: 8080
+              number: 5000
 
