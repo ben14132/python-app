@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploy with helm 
-        shell: cmd
+        shell: bash
         run: |
           helm upgrade --install python-app ./charts -n python
 
