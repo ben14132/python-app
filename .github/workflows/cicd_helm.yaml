@@ -17,6 +17,7 @@ jobs:
         shell: cmd
         run: |
           wsl helm upgrade --install python-app ./charts/python-app -n python
+          wsl kubectl --namespace python port-forward service/python-app 5000:5000
 
       # - name: shorten commit id
       #   shell: bash
