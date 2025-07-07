@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploy with helm 
-        shell: bash
+        shell: cmd
         run: |
-          helm upgrade --install python-app ./charts -n python
+          wsl helm upgrade --install python-app ./charts -n python
 
       # - name: shorten commit id
       #   shell: bash
