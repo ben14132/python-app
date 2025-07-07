@@ -16,7 +16,7 @@ jobs:
       - name: Deploy with helm 
         shell: cmd
         run: |
-          wsl helm upgrade --install python-app ./python-app/charts/python-app -n python
+          wsl helm upgrade --install python-app ./charts/python-app -n python
 
       # - name: shorten commit id
       #   shell: bash
